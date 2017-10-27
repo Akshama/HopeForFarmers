@@ -9,3 +9,10 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Hope :)")
+
+def Gov_login(request):
+	 return render(request, 'hope/Gov_login.html')
+def index(request):
+	 return render(request, 'hope/index.html')
+
+	
