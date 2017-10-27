@@ -4,17 +4,270 @@
 	<meta charset="UTF-8">
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<title>Farmers App</title>
+  <style>
+    html , body{
+      
+      overflow-x: hidden;
+    }
+
+.footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+
+  padding: 50px 60px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  float: left;
+}
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+/* Footer right */
+
+.footer-distributed .footer-right{
+  float: right;
+}
+
+/* The search form */
+
+.footer-distributed form{
+  position: relative;
+}
+
+.footer-distributed form input{
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color:  #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color:  #d1d2d2;
+
+  width: 500px;
+  padding: 18px 50px 18px 18px;
+}
+
+.footer-distributed form input:focus{
+  outline: none;
+}
+
+/* Changing the placeholder color */
+
+.footer-distributed form input::-webkit-input-placeholder {
+  color:  #5c666b;
+}
+
+.footer-distributed form input::-moz-placeholder {
+  opacity: 1;
+  color:  #5c666b;
+}
+
+.footer-distributed form input:-ms-input-placeholder{
+  color:  #5c666b;
+}
+
+/* The magnify glass icon */
+
+.footer-distributed form i{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 16px;
+  right: 18px;
+
+  color: #d1d2d2;
+  font-size: 18px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+  .footer-distributed form input{
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .footer-distributed{
+    padding: 30px;
+    text-align: center;
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-company-name{
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distributed .footer-left{
+    margin-bottom: 20px;
+  }
+
+  .footer-distributed form input{
+    width: 100%;
+  }
+
+}
+
+
+    @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+  padding:0;
+  margin:0;
+}
+
+html{
+  background-color: #eaf0f2;
+}
+
+body{
+  font:14px/1.5 Arial, Helvetica, sans-serif;
+}
+
+header{
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom:200px;
+}
+
+header h1{
+  font: normal 32px/1.5 'Open Sans', sans-serif;
+  color: #3F71AE;
+  padding-bottom: 16px;
+}
+
+header h2{
+  color: #F05283;
+}
+
+header h2 a{
+  color:inherit;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #F05283;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font: bold 14px/1 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+header h2 a:hover{
+  background-color:#F05283;
+  transition:0.2s;
+  color:#fff;
+}
+
+header ul {
+  max-width: 600px;
+  margin: 60px auto 0;
+}
+
+header ul a{
+  text-decoration: none;
+  color: #FFF;
+  text-align: left;
+  background-color: #B9C1CA;
+  padding: 10px 16px;
+  border-radius: 2px;
+  opacity: 0.8;
+  font-size: 16px;
+  display: inline-block;
+  margin: 4px;
+  line-height: 1;
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+header ul li a.active{
+  background-color: #66B650;
+  pointer-events: none;
+}
+
+header ul li a:hover {
+  opacity: 1;
+}
+
+header ul{
+  list-style: none;
+  padding: 0;
+}
+
+header ul li{
+  display: inline-block;
+}
+
+
+/* In our demo, the footers are fixed to the bottom of the page */
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+
+  </style>
+
 </head>
 <body>
-	<nav class="navbar navbar-default">
-  <div class="container-fluid">
+	<nav class="navbar navbar-default" style="background-color: #1C1E3E; " >
+  <div class="container-fluid" style="">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -23,7 +276,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#" style="color: white; font-size: 20px;">HopeForFarmers</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,20 +284,72 @@
      
       
       <ul class="nav navbar-nav navbar-right">
-     
+        <a href="#"><li style="color: white; font-size: 20px;" class="navbar-brand">Schemes</li></a>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white; font-size: 20px;">Options <span class="caret"></span></a>
+          
           <ul class="dropdown-menu">
             <li><a href="#">Government</a></li>
             <li><a href="#">Farmers</a></li>
-            
-            
-            
           </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<div class="text-center" style="background-color: #8287CD">
+
+<p style="font-size: 50px; margin-top: -20px; padding-bottom: 270px; padding-top: 270px; font-family: 'PT Sans', sans-serif; font-weight: bold; "  > Hope For Farmers</p>
+  
+</div>
+
+<div class="row" class="text-center" style="padding-bottom: 100px;">
+   <div class="col-md-6">
+  <img style="margin-left: 50% ; margin-top: 120px; " src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/150px-Emblem_of_India.svg.png" alt="mage">
+   </div>
+   <div class="col-md-6 text-center">
+  
+      <p style="margin-right: 70px; margin-top: 160px;  font-size: 25px;"><a href="#">Government</a> is here  to help farmers , with its own schemes and the upates , Here it again present here to help those needy person </p>
+     
+   </div>
+</div>
+
+<div class="row" class="text-center" style="padding-bottom: 100px;">
+  
+   <div class="col-md-6 text-center">
+  
+      <p style="margin-left: 100px; margin-top: 160px;  font-size: 25px;"><a href="#">Farmers</a> can use this plateform and it is beneficial for them to use in many perspective . </p>
+     
+   </div>
+    <div class="col-md-6">
+  <img style="margin-left: 50% ; margin-top: 120px; height: 300px;" src="http://clipart-library.com/images/BigKKjagT.png" alt="mage">
+   </div>
+</div>
+<footer class="footer-distributed" style="background-color: #1C1E3E">
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Government</a>
+          ·
+          <a href="#">Farmers</a>
+          ·
+          <a href="#">Schemes</a>
+          
+        </p>
+
+        <p class="footer-company-name">HopeForFarmers &copy; 2017</p>
+
+      </div>
+
+      <div class="footer-right">
+
+      </div>
+
+    </footer>
+
 </body>
 </html>
