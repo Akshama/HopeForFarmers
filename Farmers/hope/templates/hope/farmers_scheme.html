@@ -7,12 +7,286 @@
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 <!-- jQuery library -->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<title>farmers_scheme</title>
+  
+     <style>
+    html , body{
+      
+      overflow-x: hidden;
+    }
+
+.footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+
+  padding: 50px 60px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  float: left;
+}
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+/* Footer right */
+
+.footer-distributed .footer-right{
+  float: right;
+}
+
+/* The search form */
+
+.footer-distributed form{
+  position: relative;
+}
+
+.footer-distributed form input{
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color:  #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color:  #d1d2d2;
+
+  width: 500px;
+  padding: 18px 50px 18px 18px;
+}
+
+.footer-distributed form input:focus{
+  outline: none;
+}
+
+/* Changing the placeholder color */
+
+.footer-distributed form input::-webkit-input-placeholder {
+  color:  #5c666b;
+}
+
+.footer-distributed form input::-moz-placeholder {
+  opacity: 1;
+  color:  #5c666b;
+}
+
+.footer-distributed form input:-ms-input-placeholder{
+  color:  #5c666b;
+}
+
+/* The magnify glass icon */
+
+.footer-distributed form i{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 16px;
+  right: 18px;
+
+  color: #d1d2d2;
+  font-size: 18px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+  .footer-distributed form input{
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .footer-distributed{
+    padding: 30px;
+    text-align: center;
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-company-name{
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distributed .footer-left{
+    margin-bottom: 20px;
+  }
+
+  .footer-distributed form input{
+    width: 100%;
+  }
+
+}
+
+
+    @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+  padding:0;
+  margin:0;
+}
+
+html{
+  background-color: #eaf0f2;
+}
+
+body{
+  font:14px/1.5 Arial, Helvetica, sans-serif;
+}
+
+header{
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom:200px;
+}
+
+header h1{
+  font: normal 32px/1.5 'Open Sans', sans-serif;
+  color: #3F71AE;
+  padding-bottom: 16px;
+}
+
+header h2{
+  color: #F05283;
+}
+
+header h2 a{
+  color:inherit;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #F05283;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font: bold 14px/1 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+header h2 a:hover{
+  background-color:#F05283;
+  transition:0.2s;
+  color:#fff;
+}
+
+header ul {
+  max-width: 600px;
+  margin: 60px auto 0;
+}
+
+header ul a{
+  text-decoration: none;
+  color: #FFF;
+  text-align: left;
+  background-color: #B9C1CA;
+  padding: 10px 16px;
+  border-radius: 2px;
+  opacity: 0.8;
+  font-size: 16px;
+  display: inline-block;
+  margin: 4px;
+  line-height: 1;
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+header ul li a.active{
+  background-color: #66B650;
+  pointer-events: none;
+}
+
+header ul li a:hover {
+  opacity: 1;
+}
+
+header ul{
+  list-style: none;
+  padding: 0;
+}
+
+header ul li{
+  display: inline-block;
+}
+
+
+/* In our demo, the footers are fixed to the bottom of the page */
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+
+#boundry{
+  padding : 10px;
+  font-size: 20px;
+  margin-top: 30px;
+  border : solid;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-width: 1px;
+}
+#scheme{
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+#farmers{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+
+  }
+  </style>
+
+
 </head>
 <body>
 <nav class="navbar navbar-default" style="background-color: #1C1E3E; " >
@@ -46,6 +320,64 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<div class="container-fluid row">
+<div class="col-md-6">  
+    <img style="height: 350px; margin-left: 25%; margin-top: 50px; " src="http://clipart-library.com/images/BigKKjagT.png" alt="image">  
+</div>
+<div class="col-md-6 row">
+  <div class="col-md-4 col-md-offset-6" style="margin-top: 100px;">
+    <div style="margin-top: 30px;">
+      <p id="farmers">M.S.P :- 15Rs/kg</p>
+      <p id="farmers">Seed :-  &nbsp;  Oilseed</p>
+      <p id="farmers">Quantity :- 50kg</p>
+      
+      <p></p>
+    </div>
+  </div>
+</div>
+  
+</div>
+<div class="text-center">
+  <p id="scheme">Government  Schemes</p>
+    <div id="add">
+    <p id="boundry">
+      All farmers children  will get  free education and free further study plains for the future 
+    </p>
+    <p id="boundry">
+      Government will provide free medical facility along with medicines to all the farmers .
+    </p>
+     <p id="boundry">
+      Government will provide free medical facility along with medicines to all the farmers .
+    </p>
+
+  </div>
+
+</div>
 	
+  <footer class="footer-distributed" style="background-color: #1C1E3E">
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Government</a>
+          ·
+          <a href="#">Farmers</a>
+          ·
+          <a href="#">Schemes</a>
+          
+        </p>
+
+        <p class="footer-company-name">HopeForFarmers &copy; 2017</p>
+
+      </div>
+
+      <div class="footer-right">
+
+      </div>
+
+    </footer>
 </body>
 </html>
