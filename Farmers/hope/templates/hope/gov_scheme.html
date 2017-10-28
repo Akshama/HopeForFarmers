@@ -298,7 +298,17 @@ footer{
 #local{
 	font-size: 20px;
 }
-
+#local1{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #1C1E3E;
+}
+#local1:focus {
+    outline:none;
+}
   </style>
 </head>
 <body>
@@ -358,17 +368,17 @@ footer{
 	</div>
 	</div>
 	<div class="col-md-6 text-center" style="margin-top: 50px;">
-		<p id="local">Name</p>
 		
-		<input type="text" placeholder="name"><br><br>
-		<p id="local">Crop</p>
-		<input type="text" placeholder="crop"><br><br>
-		<p id="local">Quantity</p>
-		<input type="text" placeholder="Quantity"><br><br>
-		<p id="local">Selling price(M.S.P)</p>
-		<input type="text" placeholder="M.S.P"><br><br>
 		
-		<input type="submit" value="submit">
+		<input id="local1" type="text" placeholder="Name"><br><br>
+		
+		<input id="local1" type="text" placeholder="Crop"><br><br>
+		
+		<input id="local1" type="text" placeholder="Quantity"><br><br>
+		
+		<input type="text" id="local1" placeholder="M.S.P"><br><br>
+		
+		<input type="submit" id="schemebutton" value="submit">
 
 	</div>
 	
