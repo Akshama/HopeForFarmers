@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^index', views.index, name='index'),
     url(r'^farmers_login', views.farmers_login, name = 'farmers_login'),
     url(r'^gov_scheme',views.gov_scheme,name =  'gov_scheme'),
-    url(r'^farmers-signup',views.farmers-signup, name = 'farmers-signup')
+    url(r'^farmers-signup',views.farmers_signup, name = 'farmers_signup')
 
  
 ]

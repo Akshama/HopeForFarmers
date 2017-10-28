@@ -7,8 +7,7 @@ from django.http import HttpResponse
 
 
 
-def index(request):
-    return HttpResponse("Hope :)")
+
 
 def Gov_login(request):
 	 return render(request, 'hope/Gov_login.html')
@@ -18,7 +17,7 @@ def farmers_login(request):
 	return render(request, 'hope/farmers_login.html')
 def gov_scheme(request):
 	return render(request, 'hope/gov_scheme.html')
-def farmers-signup(request):
+def farmers_signup(request):
 	return render(request, 'hope/farmers-signup.html')
 
 
