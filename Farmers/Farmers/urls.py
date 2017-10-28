@@ -21,6 +21,7 @@ urlpatterns = [
 	url(r'', include('hope.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^login/$', auth_views.login),
+    
 
 ]
 

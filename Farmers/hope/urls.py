@@ -21,6 +21,8 @@ urlpatterns = [
     url(r'^Gov_login', views.Gov_login, name='Gov_login'),
     
     url(r'^index', views.index, name='index'),
+
+ 
 ]
 
 
