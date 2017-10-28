@@ -19,8 +19,10 @@ from . import views
 
 urlpatterns = [
     url(r'^Gov_login', views.Gov_login, name='Gov_login'),
-    
     url(r'^index', views.index, name='index'),
+    url(r'^farmers_login', views.farmers_login, name = 'farmers_login'),
+    url(r'^gov_scheme',views.gov_scheme,name =  'gov_scheme'),
+    url(r'^farmers-signup',views.farmers-signup, name = 'farmers-signup')
 
  
 ]
