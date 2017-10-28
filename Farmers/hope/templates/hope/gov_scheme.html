@@ -285,6 +285,16 @@ footer{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+#boundry{
+	padding : 10px;
+	font-size: 20px;
+	margin-top: 30px;
+	border : solid;
+	margin-left: 70px;
+	margin-right: 70px;
+	border-width: 1px;
+}
+
   </style>
 </head>
 <body>
@@ -333,12 +343,21 @@ footer{
 
 		<textarea name="scheme" id="scheme" cols="50" rows="5"></textarea>
 		<br>
-		<input type="submit" id="schemebutton" value="add scheme">
+		<input onclick="myfunction()" type="submit" id="schemebutton" value="add scheme">
+		<div id="add">
+		<p id="boundry">
+			All farmers children  will get  free education and free further study plains for the future 
+		</p>
+		<p id="boundry">
+			Government will provide free medical facility along with medicines to all the farmers .
+		</p>
+	</div>
 	</div>
 	<div class="col-md-6">
 		
 	</div>
 	
+
 </div>
 
 <footer class="footer-distributed" style="background-color: #1C1E3E">
@@ -367,4 +386,14 @@ footer{
     </footer>
 	
 </body>
+<script>
+	function myfunction(){
+		var node = document.createElement("P");
+		node.setAttribute("id", "boundry");
+		var text = document.getElementById("scheme").value
+		var textnode = document.createTextNode(text);
+		node.appendChild(textnode);
+     	document.getElementById("add").appendChild(node);
+	}
+</script>
 </html>
